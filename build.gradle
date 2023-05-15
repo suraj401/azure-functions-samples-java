@@ -26,7 +26,7 @@ repositories {
 azurefunctions {
     resourceGroup = '1-69fc3b37-playground-sandbox'
     appName = 'techgulf'
-    pricingTier = 'Dynamic'
+    pricingTier = 'Consumption'
     region = 'eastus'
     runtime {
       os = 'Linux'
