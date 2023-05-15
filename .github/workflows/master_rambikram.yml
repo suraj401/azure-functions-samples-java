@@ -11,7 +11,7 @@ on:
 
 env:
   AZURE_FUNCTIONAPP_NAME: rambikram # set this to your function app name on Azure
-  PACKAGE_DIRECTORY: '.' # set this to the directory which contains pom.xml file
+  PACKAGE_DIRECTORY: './build/libs/' # set this to the directory which contains pom.xml file
   JAVA_VERSION: '8' # set this to the java version to use
 
 jobs:
@@ -27,9 +27,9 @@ jobs:
           java-version: ${{ env.JAVA_VERSION }}
 
       - name: Build with Gradle
-        uses: gradle/gradle-build-action@67421db6bd0bf253fb4bd25b31ebb98943c375e1
-        with:
-          arguments: build
+        shell: bash
+        run: |
+          gradle build
       - name: 'Run Azure Functions Action'
         uses: Azure/functions-action@v1
         id: fa
