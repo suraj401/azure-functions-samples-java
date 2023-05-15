@@ -25,7 +25,7 @@ repositories {
 
 azurefunctions {
     resourceGroup = '1-69fc3b37-playground-sandbox'
-    appName = 'techgulf'
+    appName = 'rambikram'
     pricingTier = 'Consumption'
     region = 'eastus'
     runtime {
