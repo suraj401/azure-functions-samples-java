@@ -24,12 +24,12 @@ repositories {
 }
 
 azurefunctions {
-    resourceGroup = 'java-functions-group'
-    appName = 'azure-functions-sample'
-    pricingTier = 'Consumption'
-    region = 'westus'
+    resourceGroup = '1-69fc3b37-playground-sandbox'
+    appName = 'techgulf'
+    pricingTier = 'Dynamic'
+    region = 'eastus'
     runtime {
-      os = 'Windows'
+      os = 'Linux'
       javaVersion = 'Java 8'
     }
     auth {
